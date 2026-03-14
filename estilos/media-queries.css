@@ -25,7 +25,11 @@ grandes telas: min 1200px */
 }
 
     article#bemvindo{
+        width: 100%;
         grid-template-columns: 1fr 2fr 1fr;
+        background-position: 40% center;
+       background-attachment: fixed;        background-size:cover;
+ 
     }
 
     article#bemvindo a{
