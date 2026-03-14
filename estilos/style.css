@@ -267,11 +267,58 @@ footer{
     padding: 30px 10px;
     width: 100%;
     text-align: center;
+    font-size: 0.9em;
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
 }
 
-footer p{
-    padding: 10px 0px 0px;
-}
+ footer h2{
+    padding-bottom: 10px;
+ }
+
+ footer h2.h2-social{
+    padding-bottom: 25px;
+ }
+
+ div.contatos{
+    transition: transform 0.3s ease;
+ }
+
+ div.contatos:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+ }
+
+ div.localizacao{
+    transition: transform 0.3s ease;
+ }
+
+ div.localizacao:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+ }
+
+ div.social{
+    transition: transform 0.3s ease;
+ }
+
+ div.social:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+ }
+
+ div.social a#instagram{
+    font-size: 1.8em;
+    background-color: var(--fundo-principal);
+    border-radius: 50%;
+    padding: 8px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+ }
+
+ div.social a#instagram:hover{
+    background-color: var(--botões-principais);
+    color: var(--fundo-principal);
+    transform: scale(1.1);
+ }
