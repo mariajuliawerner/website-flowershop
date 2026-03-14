@@ -294,8 +294,18 @@ footer{
     cursor: pointer;
  }
 
+ div.contatos a{
+    color: var(--texto-claro);
+    text-decoration: none;
+ }
+
+ div.contatos a:hover{
+    text-decoration: underline;
+ }
+
  div.localizacao{
     transition: transform 0.3s ease;
+    
  }
 
  div.localizacao:hover{
