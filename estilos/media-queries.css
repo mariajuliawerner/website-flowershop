@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/*pequenas telas: max 600px
+celular: 600px até 768px
+tablet: 768px até 992px
+desktop: 992px até 1200px
+grandes telas: min 1200px */
+
+@media screen and (min-width: 768px) {
+
+    :root{
+    --rodapés: #4a2510;
+    --fundo-principal: #944811;
+
+    --fundo-seções-principais: #f4efe8;  
+    --cards-produto: #e6d7c8;         
+
+    --texto-principal: #2b2b2b;
+    --texto-claro: #eee1d4;
+
+    --botões-principais: #dfa022;
+    --detalhes-borda: #4d5a43;       
+    --hover: #293327; 
+
+}
+
+    article#bemvindo{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    article#bemvindo a{
+        display: inline-block;
+        width: fit-content;
+        padding: 5px 23px;
+        margin-bottom: 15px;
+        justify-self: center;
+        align-self: center;
+    }
+    
+
+    #apresentacao p.p-apresentacao{
+        width: 600px;
+        max-width: 70%;
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+
+    article#shop-conteiner{
+        background-image: linear-gradient(to bottom, var(--fundo-principal) 50%, var(--cards-produto) 50%);
+    }
+
+    #shop-conteiner .shop{
+        color: var(--texto-claro);
+        text-align: center;
+    }
+
+    #shop-conteiner .shop-p0{
+        display: initial;
+    }
+
+    #shop-conteiner .shop-p{
+        display: none;
+    }
+    
+    #shop-conteiner .shop-p2{
+        margin: auto;
+        display: block;
+        text-align: center;
+        max-width: 600px;
+    }
+
+    article#shop-conteiner #catalogo{
+       display: flex;
+       justify-content: space-evenly; 
+    }
+
+    #catalogo div.area-shop h1{
+        color: var(--texto-claro);
+        font-size: 1.8em;
+        padding-bottom: 22px;
+    }
+
+    article#shop-conteiner .img-shop{
+        width: 70%;
+    }
+
+    article#shop-conteiner .produto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article#shop-conteiner div.descrition-shop{
+        text-align: center;
+        padding-bottom: 15px;
+        width: 90%;
+        height: 85%;
+    }
+
+    article#shop-conteiner a.botao-shop{
+        display: inline-block;
+        width: fit-content;
+        padding: 5px 23px;
+        align-self: center;
+    }
+}
