@@ -40,9 +40,16 @@ body{
  h1, h2, h3 {
     font-family: 'cormorant garamond', serif;
     font-weight: normal;
- }--
+ }
+
 header{
-    background-color:var(--fundo-principal);
+    margin-bottom: 15px;
+    background-color:
+    var(--fundo-principal);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 div.extra{
@@ -51,25 +58,42 @@ div.extra{
     padding: 4px;
     text-align: center;
     font-size: 0.9em;
+    width: 100%;
 }
 
 div.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+div.titulo-inicial{
     padding-top:30px;
     padding-bottom: 10px;
 }
 
-div.logo h1{
+div.titulo-inicial h1{
+    margin: 0;
     text-align: center;
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 1.8em;
-    color: var(--texto-claro)
+    color: var(--texto-claro);
+
+    align-self: center;
+
 }
 
-div.logo h2{
+div.titulo-inicial h2{
     text-align: center;
     color: var(--texto-claro);
     font-weight: bold;
+}
+
+.logo img{
+    width: 150px;
+    padding: 10px;
 }
 
 nav{
@@ -78,6 +102,7 @@ nav{
     justify-content: center;
     align-items: center;
     padding: 15px 25px 10px 25px;
+
 }
 
 nav a{

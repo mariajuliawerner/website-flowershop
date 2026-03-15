@@ -24,6 +24,17 @@ grandes telas: min 1200px */
 
 }
 
+    header{
+        position: relative;
+    }
+
+    .logo img{
+        position: absolute;
+        left: 10%;
+        top: 50px;
+        width: 140px;
+    }
+
     article#bemvindo{
         width: 100%;
         grid-template-columns: 1fr 2fr 1fr;
